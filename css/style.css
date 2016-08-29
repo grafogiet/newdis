@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+html{
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(54, 54, 54);
+    height: auto;
+    min-width: 300px;
+}
+a{
+    color: rgb(26, 146, 103);
+    text-decoration: underline;
+    -webkit-transition: 0.2s ease-out 0s;
+    -moz-transition: 0.2s ease-out 0s;
+    -o-transition: 0.2s ease-out 0s;
+    transition: 0.2s ease-out 0s;
+}
+a:hover{
+    color: rgb(26, 146, 103);
+    text-decoration: none;
+}
+p{
+    line-height: 160%;
+    margin: 0 0 1%;
+}
+
+
+/* Box model */
+.boxing{float:left; width:100%}
+.fl{float:left}
+.fr{float:right}
+
+.mt{margin-top:20px}
+.mr{margin-right:20px}
+.mb{margin-bottom:20px}
+.ml{margin-left:0}
+.pt{padding-top:20px}
+.pr{padding-right:20px}
+.pb{padding-bottom:20px}
+.pl{padding-left:20px}
+
+.cb{clear:both}
+/* End Box model */
+
+/* Text model */
+.tal{text-align:left;}
+.tac{text-align:center;}
+.tar{text-align:right;}
+/* End Text model */
+
+/* Images position */
+.il{float: left; margin: 0 2% 1% 0;}
+.ir{float: right; margin: 0 0 1% 2%;}
+/* end Images position */
+
+/* Pageination */
+.PaginationHelper{text-align:center;}
+/* ends Pageination */
+
+/* Buttton */
+.scrollTop{
+    padding: 0 10px;
+    position: fixed;
+    bottom: 55px;
+    left: 92%;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.key-more{}
+
+.button-back{}
+
+.key-more:hover,.scrollTop:hover,.button-back:hover{}
+.key-more:active,.scrollTop:active, .button-back:active{}
+
+/* Ends Key */
+
+/*Social Networks - widget*/
+.mail{width:225px}
+.facebook{width:105px}
+.twitter{width:100px}
+.vk{width:125px}
+/*end Social Networks - widget*/
+
+.no-link{
+    text-decoration:none;
+    color: rgb(51, 51, 51);
+    cursor:default;
+}
+.bs{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.top-bg{
+    background: rgb(246, 246, 246);
+    border-top: 6px solid rgb(7, 123, 81);
+}
+.main-bg{
+    background: rgb(255,255,255);
+}
+
+.col-lgreen.empty-btn{
+    border:2px solid rgb(116, 190, 21);
+    color: rgb(116, 190, 21);
+}
+.col-lgreen.empty-btn:hover{
+    background: rgb(116, 190, 21);
+    color: rgb(255,255,255);
+}
+
+.empty-btn{
+    font-family: 'PT Sans', sans-serif;
+    border:2px solid rgb(26, 146, 103);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 4px 6px 7px;
+}
+.empty-btn:hover{
+    background: rgb(26, 146, 103);
+    color: rgb(255,255,255);
+}
+
+.second-drop-menu{
+    background: rgb(246,246,246);
+}
+.second-drop-menu > li {
+
+}
+.second-drop-menu > li > a{
+    color: rgb(7, 123, 81);
+    font-weight: bold;
+}
+.second-drop-menu > li > a:hover,
+.second-drop-menu > li > a:focus{
+    background: rgb(116, 190, 21);
+    color: rgb(255,255,255);
+}
+
+.foto-echo{
+    height:125px;
+    overflow:hidden;
+}
+.foto-echo img{
+    max-height:150px;
+}
+
+.photo-box{
+    margin-bottom:10px;
+    max-width: 220px;
+}
+.photo-box a{
+    width:220px;
+    height:220px;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    padding:5px;
+    border:1px solid rgb(226, 229, 231);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.photo-box a img{
+    max-width:180px;
+    max-height:208px;
+}
+.photo-header{
+    font-size:12px;
+    text-align:center;
+}
+@media (max-width:767px) {
+    .mt-xs{margin-top:20px;}
+}
+/* ends Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Header
+----------------------------------------------------------------------------------------------------*/
+header{
+    font-family: 'PT Sans', sans-serif;
+}
+@media (min-width: 1200px){
+    .logotip.col-lg-2{
+        width: 12%;
+    }
+}
+@media (max-width: 1199px) and (min-width: 992px){
+    .logotip.col-md-2{
+        width: 14%;
+    }
+    .logo-text{
+        width: 30%;
+    }
+    .header-phone{
+        width: 38%;
+    }
+}
+.logo-text{
+    height: 80px;
+    margin-top: 44px !important;
+}
+.logo-text p{
+    line-height: 130%;
+}
+.logo-text p:first-child{
+    font-size: 15px;
+}
+.logo-text p:nth-child(2){
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header-phone p{
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+}
+.header-phone .tel{
+    position:relative;
+}
+.header-phone .tel.open > .dropdown-menu {
+
+    left: auto;
+    right: 0px;
+}
+.header-phone .tel #dropdownMenu1{
+    cursor:pointer;
+}
+.header-phone p span {
+    color:rgb(51, 51, 51);
+    font-weight: bold;
+    font-size: 17px;
+}
+.header-library-link{
+    display: block;
+    background: url(../img/library-link.png) no-repeat left center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(7, 123, 81);
+    padding-left: 40px;
+    line-height: 115%;
+    height: 40px;
+    width: 160px;
+}
+.nav{
+    font-family: 'PT Sans', sans-serif;
+    color:rgb(255,255,255);
+}
+
+.btn-search:hover,
+.btn-search:focus{
+    color: rgb(116, 190, 21);
+}
+@media (max-width: 767px){
+    .logotip,
+    .logo-text,
+    .header-phone,
+    .copyright,
+    .autor{text-align: center;}
+    .header-library-link{margin-left: 32%;}
+    .mb-sm {	margin-bottom:15px;}
+    .tac-sm {text-align:center;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .news-quick-btn{
+        font-size: 14px !important;
+    }
+    .navbar-default .navbar-nav > li > a{
+        font-size: 14px;
+    }
+}
+#logotel {
+    width: 20px;
+    margin-top: -4px;
+    margin-right: 3px;
+}
+
+#numbertwo {
+    margin-left: 26px;
+}
+
+#dis {
+    text-align: left;
+}
+
+.button-fonts-size-a{
+    -webkit-transition: 0.2s ease-out 0s;
+    -moz-transition: 0.2s ease-out 0s;
+    -o-transition: 0.2s ease-out 0s;
+    transition: 0.2s ease-out 0s;
+    font-family: 'PT Sans', sans-serif;
+    border: 2px solid rgb(26, 146, 103);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 4px 6px 7px;
+    background: inherit;
+}
+
+.button-fonts-size-block{
+    display: inline-block;
+    color: rgb(26, 146, 103);
+}
+/*Навигация сайта*/
+.navbar  {
+    background-color: rgb(26, 146, 103);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ffffff;
+    background-color: rgb(116, 190, 21);
+}
+/*Поиск - кнопка*/
+.btn-search {
+    color: rgb(255,255,255);
+    background: rgb(26, 146, 103);
+    font-size: 17px;
+}
+.btn-search:hover, .btn-search:focus {
+    color: rgb(116, 190, 21);
+}
+
+
+
