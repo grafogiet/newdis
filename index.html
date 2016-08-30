@@ -31,8 +31,8 @@
             <div class="col-md-4 col-sm-8 col-xs-12 header-phone mt">
                 <div class="tel mb">
                     <p id="dropdownMenu1" role="button" class="dropdown-toggle" data-toggle="dropdown">Телефон приемной комиссии: <span><!--<a href="tel:+7 4862 12-34-56">--><br>
-					    <img  id="logotel" src="img/logotel.png">+7 4862 43-50-78;</br>
-                        <b id="numbertwo">+7 4862 25-50-32</b></span>
+					    <img  class="logotel" src="img/logotel.png">+7 4862 43-50-78;</br>
+                        <img  class="logotel" src="img/logotel.png"><b id="numbertwo">+7 4862 25-50-32</b></span>
                 </div>
                 <div id='dis' class="mt tac">
                     <form class="button-fonts-size-block mr hidden-sm hidden-xs">
@@ -109,48 +109,81 @@
                     </div>
                     <button type="submit" class="btn btn-search glyphicon glyphicon-search"></button>
                 </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Ссылка</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Действие</a></li>
-                            <li><a href="#">Другое действие</a></li>
-                            <li><a href="#">Что-то еще</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Отдельная ссылка</a></li>
-                        </ul>
-                    </li>
-                </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 </div>
-<div class="page">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+<div class="panel">
     <div class="row">
-        <div class=".col-xs-6 .col-md-4">
-            <div class="thumbnail">
-                <img data-src="holder.js/300x200" alt="...">
-                <div class="caption">
-                    <h3>Ярлык эскиза</h3>
-                    <p>.hgggggggggggggggg.</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
-                </div>
-            </div>
+        <div class="col-md-2 col-sm-6 col-xs-6 mt">
+            <a href="#" class="news-quick-btn">
+                <span>
+                    <img src="img/pad.png">
+                    Электронная приемная
+                </span>
+            </a>
+    </div>
+        <div class="col-md-2 col-sm-6 col-xs-6 mt">
+            <a href="#" class="news-quick-btn">
+                <span>
+                    <img src="img/watch.png">
+                    Расписание занятий
+                </span>
+            </a>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6 mt">
+            <a href="#" class="news-quick-btn">
+                <span>
+                    <img src="img/hat.png">
+                    Образовательные ресурсы
+                </span>
+            </a>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6 mt">
+            <a href="#" class="news-quick-btn">
+                <span>
+                    <img src="img/owl.png">
+                    Приёмная комиссия
+                </span>
+            </a>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6 mt">
+            <a href="#" class="news-quick-btn">
+                <span>
+                    <img src="img/pad.png">
+                    Образование и наука против террора
+                </span>
+            </a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <img data-src="holder.js/300x200" alt="...">
-                <div class="caption">
-                    <h3>Ярлык эскиза</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
+    <div class="news">
+        <h2>Новости</h2>
+    </div>
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+
+    <div class="panel panel-default warden-area">
+        <div class="panel-heading">
+            <h2>Календарь событий</h2>
+        </div>
+        <p class="tac"><a href="/reception.php?action=add&razdel=1" class="btn col-lgreen empty-btn ml">Задать вопрос</a></p>
+        <div class="panel-body">
+            <a href="#">
+                <img class="img-circle" alt="" src="#">
+                <div>
+                    <h4>#</h4>
+                    <p>#</p>
                 </div>
-            </div>
+
+            </a>
+        </div>
+        <div class="boxing tac mt">
+            <p><a href="/reception.php" class="btn col-lgreen empty-btn ml">Смотреть ответы</a></p>
         </div>
     </div>
+
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
